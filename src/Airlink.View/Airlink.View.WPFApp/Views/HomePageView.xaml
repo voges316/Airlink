@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="Airlink.View.WPFApp.Views.HomePageView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="284" d:DesignWidth="670">
+    <Grid Background="{DynamicResource {x:Static SystemColors.AppWorkspaceBrushKey}}">
+        <Label x:Name="WelcomTitle" Content="Welcome to Airlink!" HorizontalAlignment="Center" Height="140" Margin="85,52,85,92" VerticalAlignment="Center" Width="500" Background="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="36" FontFamily="Segoe UI Semibold" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBlock Height="40" Margin="230,152,0,0" TextWrapping="Wrap" Text="Rapid Personnel Management Software" VerticalAlignment="Top" Width="217" HorizontalAlignment="Left"/>
+
+    </Grid>
+</UserControl>

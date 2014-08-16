@@ -1,0 +1,66 @@
+﻿<!--
+    This resource dictionary is used by the MainWindow
+    -->
+<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="clr-namespace:Airlink.View.WPFApp.ViewModel"
+    xmlns:vw="clr-namespace:Airlink.View.WPFApp.Views"
+    >
+    
+    <!-- 
+    Template applies HomePageView to instance of HomePageViewModel
+    -->
+    <DataTemplate DataType="{x:Type vm:HomePageViewModel}">
+        <vw:HomePageView />
+    </DataTemplate>  
+    
+    <!--
+    Template applies a NewPersonView to an instance of the 
+    NewPersonViewModel class shown in the MainWindow
+    -->
+    <DataTemplate DataType="{x:Type vm:NewPersonViewModel}">
+        <vw:NewPersonView />
+    </DataTemplate>
+
+    <!--
+    Template applies a NewPersonBetaView to an instance of the 
+    NewPersonBetaViewModel class shown in the MainWindow
+    -->
+    <DataTemplate DataType="{x:Type vm:NewPersonBetaViewModel}">
+        <vw:NewPersonBetaView />
+    </DataTemplate>
+
+    <!--
+    Template applies a EditPersonView to an instance of the 
+    EditPersonViewModel class shown in the MainWindow
+    -->
+    <DataTemplate DataType="{x:Type vm:EditPersonViewModel}">
+        <vw:EditPersonView />
+    </DataTemplate>
+
+    <!--
+    Template applies a NewEmployeeView to an instance of the 
+    NewEmployeeViewModel class shown in the MainWindow
+    -->
+    <DataTemplate DataType="{x:Type vm:NewEmployeeViewModel}">
+        <vw:NewEmployeeView />
+    </DataTemplate>
+
+    <!--
+    Template applies a EditEmployeeView to an instance of the 
+    EditEmployeeViewModel class shown in the MainWindow
+    -->
+    <DataTemplate DataType="{x:Type vm:EditEmployeeViewModel}">
+        <vw:EditEmployeeView />
+    </DataTemplate>
+
+    <!--
+    Template applies a JobMenuView to an instance of the 
+    JobMenuViewModel class shown in the MainWindow
+    -->
+    <DataTemplate DataType="{x:Type vm:JobMenuViewModel}">
+        <vw:JobMenuView />
+    </DataTemplate>
+    
+</ResourceDictionary>

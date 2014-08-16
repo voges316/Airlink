@@ -1,0 +1,55 @@
+﻿<UserControl x:Class="Airlink.View.WPFApp.Views.NewEmployeeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="284" Width="670">
+    <Grid x:Name="NewEmployee" Margin="0,0,0,0" Width="670" Height="284">
+        <Grid.Background>
+            <SolidColorBrush Color="{DynamicResource {x:Static SystemColors.AppWorkspaceColorKey}}"/>
+        </Grid.Background>
+        <Label x:Name="LabelTitle" Content="Create New Employee" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="14"/>
+        <Label x:Name="LabelFirstName" Content="First Name: " HorizontalAlignment="Left" Margin="10,56,0,0" VerticalAlignment="Top" Height="29"/>
+        <TextBox x:Name="TxtBoxFirstName" HorizontalAlignment="Left" Height="29" Margin="98,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"
+                 Text="{Binding Path=FirstName}" Padding="5" />
+        <Label x:Name="LabelLastName" Content="Last Name: " HorizontalAlignment="Left" Height="29" Margin="303,56,0,0" VerticalAlignment="Top" Width="72" RenderTransformOrigin="0.236,0.451"/>
+        <TextBox x:Name="TxtBoxLastName" HorizontalAlignment="Left" Height="29" Margin="375,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"
+                 Text="{Binding Path=LastName}" Padding="5" />
+        <Label x:Name="LabelGender" Content="Gender: " HorizontalAlignment="Left" Height="29" Margin="10,90,0,0" VerticalAlignment="Top" Width="54"/>
+        <ComboBox x:Name="ComboBxGender" HorizontalAlignment="Left" Height="29" Margin="98,90,0,0" VerticalAlignment="Top" Width="81"
+                  SelectedItem="{Binding Path=GenderType}" ItemsSource="{Binding GenderValues}"/>
+        <Label x:Name="Rank" Content="Rank: " HorizontalAlignment="Left" Margin="184,90,0,0" VerticalAlignment="Top" Height="29"/>
+        <ComboBox x:Name="ComboBxRank" HorizontalAlignment="Left" Height="29" Margin="231,90,0,0" VerticalAlignment="Top" Width="81"
+        	SelectedItem="{Binding RankType}" ItemsSource="{Binding RankValues}"/>
+        <Label x:Name="Flight" Content="Flight: " HorizontalAlignment="Left" Margin="317,90,0,0" VerticalAlignment="Top" Height="29"/>
+        <ComboBox x:Name="ComboBxFlight" HorizontalAlignment="Left" Height="29" Margin="375,90,0,0" VerticalAlignment="Top" Width="81"
+        	ItemsSource="{Binding Flights}" />
+        <Label x:Name="LabelPhone" Content="Phone: " HorizontalAlignment="Left" Height="29" Margin="14,124,0,0" VerticalAlignment="Top" Width="81"/>
+        <TextBox x:Name="TxtBoxPhone" HorizontalAlignment="Left" Height="29" Margin="98,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"
+                 Text="{Binding Path=PhoneNumber}" Padding="5" />
+        <Label x:Name="LabelEmail" Content="Email: " HorizontalAlignment="Left" Height="29" Margin="318,124,0,0" VerticalAlignment="Top" Width="57"/>
+        <TextBox x:Name="TxtBoxEmail" HorizontalAlignment="Left" Height="29" Margin="375,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"
+                 Text="{Binding Path=Email}" Padding="5" />
+        <Label x:Name="LabelStreet" Content="Street: " HorizontalAlignment="Left" Height="29" Margin="10,158,0,0" VerticalAlignment="Top" Width="54"/>
+        <TextBox x:Name="TxtBoxStreet" HorizontalAlignment="Left" Height="29" Margin="98,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="477"
+                 Text="{Binding Path=Street}" Padding="5" />
+        <Label x:Name="LabelCity" Content="City: " HorizontalAlignment="Left" Height="29" Margin="10,192,0,0" VerticalAlignment="Top" Width="54"/>
+        <TextBox x:Name="TxtBoxCity" HorizontalAlignment="Left" Height="29" Margin="98,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="140"
+                 Text="{Binding Path=City}" Padding="5" />
+        <Label x:Name="LabelState" Content="State: " HorizontalAlignment="Left" Height="29" Margin="243,192,0,0" VerticalAlignment="Top" Width="67"/>
+        <TextBox x:Name="TxtBoxState" HorizontalAlignment="Left" Height="29" Margin="289,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76"
+                 Text="{Binding Path=State}" Padding="5" />
+        <Label x:Name="LabelZip" Content="Zip Code: " HorizontalAlignment="Left" Height="29" Margin="375,192,0,0" VerticalAlignment="Top" Width="62"/>
+        <TextBox x:Name="TxtBoxZip" HorizontalAlignment="Left" Height="29" Margin="437,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="138"
+                 Text="{Binding Path=ZipCode}" Padding="5" />
+        <Button x:Name="ButtonSubmit" Content="Submit" HorizontalAlignment="Left" Height="29" Margin="364,226,0,0" VerticalAlignment="Top" Width="103" 
+                Command="{Binding Path=SubmitCommand}" />
+        <Button x:Name="ButtonClear" Content="Clear" HorizontalAlignment="Left" Height="29" Margin="472,226,0,0" VerticalAlignment="Top" Width="103" 
+        	Command="{Binding Path=ClearCommand}" />
+        <Label x:Name="LabelErrors" HorizontalAlignment="Left" Height="29" Margin="98,226,0,0" VerticalAlignment="Top" Width="261"
+                Content="{Binding Path=LabelMessage}" />
+        
+
+    </Grid>
+</UserControl>

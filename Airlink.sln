@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{80B9F70C-C22A-4DA4-A32C-F9F475773302}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airlink.Model.Domain", "src\Airlink.Model.Domain\Airlink.Model.Domain.csproj", "{B2EDD0EA-D5AE-405E-9280-9D91523B6C76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airlink.Model.Business", "src\Airlink.Model.Business\Airlink.Model.Business.csproj", "{0609CAFD-C466-4D63-A9BD-4909701BF453}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airlink.Model.Services", "src\Airlink.Model.Services\Airlink.Model.Services.csproj", "{6732EB75-4980-4A58-832D-F3FFBC9D15A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Airlink.View.WPFApp", "src\Airlink.View\Airlink.View.WPFApp\Airlink.View.WPFApp.csproj", "{2DB4A9E9-3A20-432A-95FE-2999AED868F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Airlink.View", "Airlink.View", "{8E4BAE5F-367B-4CE4-8B30-AA4A4BDAC013}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2EDD0EA-D5AE-405E-9280-9D91523B6C76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2EDD0EA-D5AE-405E-9280-9D91523B6C76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2EDD0EA-D5AE-405E-9280-9D91523B6C76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2EDD0EA-D5AE-405E-9280-9D91523B6C76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0609CAFD-C466-4D63-A9BD-4909701BF453}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0609CAFD-C466-4D63-A9BD-4909701BF453}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0609CAFD-C466-4D63-A9BD-4909701BF453}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0609CAFD-C466-4D63-A9BD-4909701BF453}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6732EB75-4980-4A58-832D-F3FFBC9D15A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6732EB75-4980-4A58-832D-F3FFBC9D15A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6732EB75-4980-4A58-832D-F3FFBC9D15A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6732EB75-4980-4A58-832D-F3FFBC9D15A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DB4A9E9-3A20-432A-95FE-2999AED868F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DB4A9E9-3A20-432A-95FE-2999AED868F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DB4A9E9-3A20-432A-95FE-2999AED868F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DB4A9E9-3A20-432A-95FE-2999AED868F9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B2EDD0EA-D5AE-405E-9280-9D91523B6C76} = {80B9F70C-C22A-4DA4-A32C-F9F475773302}
+		{0609CAFD-C466-4D63-A9BD-4909701BF453} = {80B9F70C-C22A-4DA4-A32C-F9F475773302}
+		{6732EB75-4980-4A58-832D-F3FFBC9D15A1} = {80B9F70C-C22A-4DA4-A32C-F9F475773302}
+		{2DB4A9E9-3A20-432A-95FE-2999AED868F9} = {8E4BAE5F-367B-4CE4-8B30-AA4A4BDAC013}
+		{8E4BAE5F-367B-4CE4-8B30-AA4A4BDAC013} = {80B9F70C-C22A-4DA4-A32C-F9F475773302}
+	EndGlobalSection
+EndGlobal
